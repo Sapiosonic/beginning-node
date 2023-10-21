@@ -1,0 +1,15 @@
+{
+  "name": "beginning-node-part-one",
+  "version": "1.0.0",
+  "description": "Beginning Node.js, Express and MongoDB Development By Greg Lim covering chapters one and two",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm start"
+  },
+  "author": "Radamés",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
