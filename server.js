@@ -3,10 +3,16 @@ const http = require('http');
 
 // http.createServer takes a callback function
 const server = http.createServer((req, resp) =>{
-  // send a request
-  console.log(req.url);
-  // send the response
-  resp.end('Hello World');
+  if(req.url === '/about')
+    resp.end('The about page');
+  else if(req.url === '/contact')
+    resp.end('The contact page');
+  else if(req.url === '/')
+    resp.end('The home page');
+  else{
+    resp.writeHead(404);
+    resp.end('Page not found');
+  }
 });
 
 // listen to a port
